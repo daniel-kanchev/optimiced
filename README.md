@@ -7,6 +7,7 @@ Notes:
 - Articles from both blogs are in the same table, their origin is indicated in the language column
 - Dates are formatted to be sortable
 - Dates are in a yy/mm/dd format to be in chronological order when sorted.
+- Separate spider for each blog, run 'python crawl.py' to crawl simultaneously
 
 DB Schema:
 - Title: title of the article
