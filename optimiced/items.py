@@ -1,12 +1,9 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
-class OptimicedItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Article(scrapy.Item):
+    title = scrapy.Field()  # title of the article
+    link = scrapy.Field()  # link to the article
+    date = scrapy.Field()  # date when article was posted
+    text = scrapy.Field()  # full text of the article
+    lang = scrapy.Field()  # language it was written in (bg/en)
